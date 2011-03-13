@@ -68,19 +68,6 @@
 		foreach ($logs as $filename) {
 	  	print('<li><a href="?date=' . str_replace($remove, '', $filename) . '&chan=' . $chan . '">' . date("F d Y", filemtime($filename)) . '</a></li>');
 		}
-		print('<a href="http://phobos.stormbit.net:8033/' . $chan . '/top/total/lines/"><tt>#' . $chan . ' Stats</tt></a><br />');
-		if(isset($_GET['search'])) {
-			print('Search: <div id="cse" style="width: 100%;">Loading</div>
-			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-			<script type="text/javascript">
-  			google.load("search", "1", {language : "en"});
-  			google.setOnLoadCallback(function() {
-    			var customSearchControl = new google.search.CustomSearchControl("009292200434156746820:j13zftk4mrm");
-    			customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    			customSearchControl.draw("cse");
-  			}, true);
-			</script><br />');
-			};
-		print('</body></html>');
+		print('<a href="http://phobos.stormbit.net:8033/' . $chan . '/top/total/lines/"><tt>#' . $chan . ' Stats</tt></a><br /> </body> </html>');
 	}
 ?>
