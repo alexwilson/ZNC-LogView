@@ -1,6 +1,6 @@
 <?php
 /*
-	ZNC-LogViewer Version 1.0
+	ZNC-LogViewer Version 1.0 - 15/03/2011
 	A simple script to display ZNC logs online, with basic HTML parsing.
 
 	For changelog, please see my git repo, at http://git.antoligy.com
