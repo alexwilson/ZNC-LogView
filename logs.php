@@ -3,6 +3,8 @@
 	ZNC-LogViewer Version 1.0
 	A simple script to display ZNC logs online, with basic HTML parsing.
 
+	For changelog, please see my git repo, at http://git.antoligy.com
+
 
 	Copyright (c) 2011 Alex "Antoligy" Wilson <antoligy@antoligy.com>
 
@@ -27,14 +29,16 @@
 
 */
 
-## Firstly, lets declare some variables.
- # this would appear to be basic security
-	$chdir = array('..', '/', '~', '#',);
+## Firstly, configuration.
+ # this would appear to be basic security, you don't need to touch this.
+	$chdir = array('..', '/', '~', '#', '\',);
 
- # channels where logs will not be publicly viewable
+ # channels where logs will not be publicly viewable, should be obvious what
+ #   what this is useful for.
 	$denied = array('gbatemp.eof', 'bearcave', 'ndscheats-staff', '*');
 
- # the access denied error, feel free to add assorted slurs here
+ # the error returned when someone tries accessing one of the above channels
+ #   feel free to add assorted slurs here
 	$denymsg = array('Access Denied');
 
  # the path to the log directory itself
