@@ -44,7 +44,8 @@
 	$scheme = array('background' => '#FFFFFF', 'foreground' => '#000000', 'link' => '#0000FF');
 
  # the default channel
-  $chan = 'gbatemp.net';
+	$chan = 'gbatemp.net';
+
 ## Config is over, now onto the script itself.
 
 
